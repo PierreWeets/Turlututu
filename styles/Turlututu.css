@@ -1,344 +1,231 @@
-body{
+body {
   background-color: white;
-  margin : 20px;
-  border : 1px solid rgb(76, 76, 175);
-  font-size: larger;
+  margin: 1em;
+  border: 0.1em solid #4c4caf;
+  font-size: large;
 }
 
 div.grid {
-  background-color: rgb(76, 76, 175);
+  background-color: #4c4caf;
 }
 
-  nav.nav-top-menu {
-    background-color: black;
-    padding: 1px;
-  }
-  
-  img.turlututu-small-logo {
-    filter: blur(1px);
-  }
-  
-  img.turlututu-large-logo {
-    filter: blur(6px);
-  }
-  
-  li.top-menu-button {
-    font-family: "Arial";
-    display: inline;
-    position: relative;
-    left: 5px;
-    top: 2px;
-  }
-  
-  li.top-menu-button:last-child{
-    font-family: "Arial";
-    font-size: 16px;
-    color: white;
-    float:right;
-    margin-right: 10px;
-  }
-
-  a.top-menu-button {
-    text-decoration: none;
-    color: white;
-    font-size: large;
-  }
-  
-  h2{
-    color : white;
-    font-size: larger;
-  }
-
-  /*grid for front Division , 2 columns with same width*/
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 125px;
-    color : white;
-    font-size: larger;
-  }
-  /*for content of the box at left side , on 2 rows*/
-  .grid-box1 {
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin: auto;
-  }
-  /*for content of the box at top-right*/
-  .grid-box2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin: auto;
-  }
-  /*for content of the box at middle-right*/
-  .grid-box3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    color : inherit; /*inherited from the parent div.grid */
-    font-size: inherit; /*inherited from the parent div.grid */
-    margin: auto;
-  }
-  /*for content of the box at bottom-right*/
-  .grid-box4 {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin: auto;
-  }
-
-  p.main-comment{
-    font-size: inherit ;/*inherited from the parent body */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    margin-left: 50px;
-  }
-
-  .submit {
-    background-color: orange;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-    border: 5px solide white;
-    padding : 10px;
-    font-weight: bold;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  div.explaination {
-    background-color: rgb(76, 76, 175);
-    display: grid;
-    grid-template-columns: 3fr 3fr 1fr; /*2 first columns for explanation, last one for the message icone */
-    grid-auto-rows: auto;
-    text-align: left;
-    font-size: large;
-    color : white;    
-    }
-
-  div.explaination-box1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-left : 100px;
-    padding-right: 20px;
-    
-  }
-  .explaination-box2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-  
-  .explaination-box3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-left : 100px;
-  }
-
-  .explaination-box4 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .explaination-box6 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin : auto;
-  }
-
-  .comment-explaination{
-    font-size: inherit ;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-  }
-
-  /*division with sponsors*/
-  div.sponsors{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-auto-rows: 200px;
-    border : 1px solid black;
-    background-color: rgb(236, 233, 233);
-     }
-
-  div.sponsors > div {/*for each div inside div.sponsors*/
-    background-color: rgb(236, 233, 233);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }    
-  div.sponsors-box1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  div.sponsors-box2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }
-  
-  div.sponsors-box3 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 4;
-    grid-column-end: 5;
-  }
-
-  div.sponsors-box4 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 5;
-    grid-column-end: 6;
-  }
-
-  div.sponsors-box5 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 6;
-    grid-column-end: 7;
-  }
-
-  div.sponsors-box6 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 7;
-    grid-column-end: 8;
-  }
-
-  div.sponsors-box7 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 9;
-  }
-
-  div.bottom{
-    display : grid;
-    grid-template-columns: 5fr 1fr 5fr;
-    grid-auto-rows: 200px;
-    background-color: white;
-  }
-  
-  div.bottom-box1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-    input.input-bottom-box {
-      border-radius: 10px;
-      border: 5px solide white;
-      background-color: blue;
-      cursor: pointer;
-      color: white;
-      padding : 10px;
-      font-weight: bold;
-      display: inline;
-    }
-
-    input.input-bottom-box3 {
-      border-radius: 10px;
-      border: 5px solide white;
-      background-color: orange;
-      cursor: pointer;
-      color: white;
-      padding : 10px;
-      font-weight: bold;
-      display: inline;
-    }
-
-  div.bottom-box2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  div.bottom-box3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin-left: 20px ;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    
-  }
-
-
-  nav.bottom-menu{
+nav {
   background-color: black;
-  padding: 1px;
-  }
+  padding: 0.1em;
+  /*top menu*/
+  /*bottom menu*/
+}
 
+nav img.turlututu-small-logo {
+  -webkit-filter: blur(0.1em);
+          filter: blur(0.1em);
+}
 
-li.bottom-menu-button {
+nav li.top-menu-button {
+  display: inline;
+  position: relative;
+  left: 0.4em;
+  top: 0.2em;
+}
+
+nav li.top-menu-button:last-child {
+  font-size: 1em;
+  float: right;
+  margin-right: 0.7em;
+}
+
+nav li a.top-menu-button {
+  text-decoration: none;
+  color: white;
+  font-family: "Arial";
+  font-size: large;
+}
+
+nav li.bottom-menu-button {
   font-family: "Arial";
   display: inline;
   position: relative;
-  left: 0px;
-  top: 2px;
+  left: 0em;
+  top: 0.2em;
 }
 
-a.bottom-menu-button {
+nav li.bottom-menu-button a {
   text-decoration: none;
   font-family: "Arial";
-  font-size: 16px;
+  font-size: 0.8em;
   color: white;
-  border-left: 1px dotted white; 
+  border-left: 0.1em dotted white;
 }
 
-li.bottom-menu-button:first-child a { 
-  border-left:none;
+nav li.bottom-menu-button:first-child a {
+  border-left: none;
 }
 
-li.bottom-menu-button:nth-last-child(2) a {
-  float:right;
-  border-left:none;
+nav li.bottom-menu-button:nth-last-child(2) a {
+  float: right;
+  border-left: none;
   margin-top: -3em;
   z-index: 2;
 }
 
-li.bottom-menu-button:last-child a { 
-  border-left:none;
-  float:right;
-  margin-right: -25px;
+nav li.bottom-menu-button:last-child a {
+  border-left: none;
+  float: right;
+  margin-right: -1.5em;
   z-index: 1;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 5em;
+  color: white;
+  font-size: larger;
+}
 
+.grid img.turlututu-large-logo {
+  -webkit-filter: blur(0.2em);
+          filter: blur(0.2em);
+}
 
+.grid-box {
+  margin: auto;
+}
 
+.grid-box.box1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
 
+.grid-box.box2 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
 
+.grid-box.box3 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-box.box4 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+body p.main-comment {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  margin-left: 3em;
+}
+
+.submit {
+  background-color: orange;
+  border-radius: 0.4em;
+  border: 0.4em solide white;
+  cursor: pointer;
+  color: white;
+  padding: 1em;
+  font-weight: bold;
+}
+
+/*division informations*/
+div.flex-table {
+  background-color: #4c4caf;
+  font-size: large;
+  color: white;
+}
+
+div.flex-table h2 {
+  color: white;
+  font-size: larger;
+}
+
+div.flex-table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 130%;
+}
+
+div.flex-table .col {
+  padding-left: 3em;
+  text-align: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.comment-explaination {
+  font-size: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+/*division with sponsors*/
+div.sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ece9e9;
+  padding-left: 6em;
+  padding-right: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/*division with 3 buttons*/
+div.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em;
+}
+
+div.bottom .input-bottom-box, div.bottom .input-bottom-box3 {
+  border-radius: 0.8em;
+  cursor: pointer;
+  color: white;
+  padding: 0.75em;
+  font-weight: bold;
+  display: inline;
+}
+
+div.bottom .input-bottom-box {
+  background-color: blue;
+}
+
+div.bottom .input-bottom-box3 {
+  background-color: orange;
+}
+/*# sourceMappingURL=Turlututu.css.map */

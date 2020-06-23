@@ -1,0 +1,344 @@
+body{
+  background-color: white;
+  margin : 20px;
+  border : 1px solid rgb(76, 76, 175);
+  font-size: larger;
+}
+
+div.grid {
+  background-color: rgb(76, 76, 175);
+}
+
+  nav.nav-top-menu {
+    background-color: black;
+    padding: 1px;
+  }
+  
+  img.turlututu-small-logo {
+    filter: blur(1px);
+  }
+  
+  img.turlututu-large-logo {
+    filter: blur(6px);
+  }
+  
+  li.top-menu-button {
+    font-family: "Arial";
+    display: inline;
+    position: relative;
+    left: 5px;
+    top: 2px;
+  }
+  
+  li.top-menu-button:last-child{
+    font-family: "Arial";
+    font-size: 16px;
+    color: white;
+    float:right;
+    margin-right: 10px;
+  }
+
+  a.top-menu-button {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+  
+  h2{
+    color : white;
+    font-size: larger;
+  }
+
+  /*grid for front Division , 2 columns with same width*/
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 125px;
+    color : white;
+    font-size: larger;
+  }
+  /*for content of the box at left side , on 2 rows*/
+  .grid-box1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+  }
+  /*for content of the box at top-right*/
+  .grid-box2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto;
+  }
+  /*for content of the box at middle-right*/
+  .grid-box3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color : inherit; /*inherited from the parent div.grid */
+    font-size: inherit; /*inherited from the parent div.grid */
+    margin: auto;
+  }
+  /*for content of the box at bottom-right*/
+  .grid-box4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto;
+  }
+
+  p.main-comment{
+    font-size: inherit ;/*inherited from the parent body */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    margin-left: 50px;
+  }
+
+  .submit {
+    background-color: orange;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 5px solide white;
+    padding : 10px;
+    font-weight: bold;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  div.explaination {
+    background-color: rgb(76, 76, 175);
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr; /*2 first columns for explanation, last one for the message icone */
+    grid-auto-rows: auto;
+    text-align: left;
+    font-size: large;
+    color : white;    
+    }
+
+  div.explaination-box1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left : 100px;
+    padding-right: 20px;
+    
+  }
+  .explaination-box2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .explaination-box3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left : 100px;
+  }
+
+  .explaination-box4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .explaination-box6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin : auto;
+  }
+
+  .comment-explaination{
+    font-size: inherit ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  /*division with sponsors*/
+  div.sponsors{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: 200px;
+    border : 1px solid black;
+    background-color: rgb(236, 233, 233);
+     }
+
+  div.sponsors > div {/*for each div inside div.sponsors*/
+    background-color: rgb(236, 233, 233);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }    
+  div.sponsors-box1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  div.sponsors-box2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  
+  div.sponsors-box3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  div.sponsors-box4 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+
+  div.sponsors-box5 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+
+  div.sponsors-box6 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 7;
+    grid-column-end: 8;
+  }
+
+  div.sponsors-box7 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  div.bottom{
+    display : grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    grid-auto-rows: 200px;
+    background-color: white;
+  }
+  
+  div.bottom-box1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+    input.input-bottom-box {
+      border-radius: 10px;
+      border: 5px solide white;
+      background-color: blue;
+      cursor: pointer;
+      color: white;
+      padding : 10px;
+      font-weight: bold;
+      display: inline;
+    }
+
+    input.input-bottom-box3 {
+      border-radius: 10px;
+      border: 5px solide white;
+      background-color: orange;
+      cursor: pointer;
+      color: white;
+      padding : 10px;
+      font-weight: bold;
+      display: inline;
+    }
+
+  div.bottom-box2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  div.bottom-box3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 20px ;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+  }
+
+
+  nav.bottom-menu{
+  background-color: black;
+  padding: 1px;
+  }
+
+
+li.bottom-menu-button {
+  font-family: "Arial";
+  display: inline;
+  position: relative;
+  left: 0px;
+  top: 2px;
+}
+
+a.bottom-menu-button {
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 16px;
+  color: white;
+  border-left: 1px dotted white; 
+}
+
+li.bottom-menu-button:first-child a { 
+  border-left:none;
+}
+
+li.bottom-menu-button:nth-last-child(2) a {
+  float:right;
+  border-left:none;
+  margin-top: -3em;
+  z-index: 2;
+}
+
+li.bottom-menu-button:last-child a { 
+  border-left:none;
+  float:right;
+  margin-right: -25px;
+  z-index: 1;
+}
+
+
+
+
+
+
