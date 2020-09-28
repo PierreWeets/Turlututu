@@ -2,7 +2,7 @@
 [Turlututu](https://pierreweets.github.io/turlututu/index.html).
 
 # Exercise
-* [Requirements](https://github.com/becodeorg/CRL-Woods-3.21/tree/master/LearningPath/01.The-Field/05.HTML-CSS/progressive-enhancement#5)
+* [Requirements](https://github.com/becodeorg/CRL-Woods-3.21/tree/master/LearningPath/01.The-Field/05.HTML-CSS/progressive-enhancement#5-exercices-pratiques-terminant-ce-sprint)
 * [Screen to reproduce](https://github.com/becodeorg/CRL-Woods-3.21/blob/master/LearningPath/01.The-Field/05.HTML-CSS/progressive-enhancement/turlututu.png)
 
 # Point of interest : 
